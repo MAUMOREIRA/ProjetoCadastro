@@ -1,0 +1,15 @@
+-- COMANDOS  SQL SE DIVIDEM EM DUAS LINGUAGENS
+-- ------------------------------------------------------------
+-- DDL (Data Definition Language)
+-- => Comadnos de Definição do banco de dasdos
+-- Ex: CRETE DATABASE NAME
+-- DROP DATABASE NAME
+-- CREATE TABLE NAME (COLUNAS)
+-- DROP TABLE NAME
+-- ------------------------------------------------------------
+-- DMS (Data Manipulation Language)
+-- => Comandos de manipulação de dados
+-- Ex: SELECT COLUNAS FROM TABELA
+-- INSERT INTO TABELA (COLUNAS) VALUES (VALORES)
+-- DELETE FRON TABELA
+-- UPDATE COLUNAS FROM TABELA
