@@ -34,6 +34,7 @@
      echo "<td><a href='altera_usuario.php?id_usuario="
                 .$row['id_usuario']."'>Alterar</a> </td>";
      echo "</tr>";
+     echo"<td><a href='exclui_usuario.php?id_usuario=".$row['id_usuario']."'>Excluir</a></td>";
      }while($row = mysqli_fetch_array($result))
     ?>
     <a href="index.php">Voltar</a>

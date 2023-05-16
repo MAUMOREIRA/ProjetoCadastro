@@ -19,7 +19,7 @@ $sql = "UPDATE usuario SET
     echo $sql;
     $result = mysqli_query($con, $sql);
     if ($result)
-        echo "Dados alterados com sucesso!<br>";
+        echo  "Dados alterados com sucesso! <br>";
     else
     echo "Erro ao alterar dados: ",mysqli_error($con), "!";
     
