@@ -1,3 +1,7 @@
+<?php 
+    include('cria_sessao.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +11,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Pagina Inicial - Projeto Cadastro IFSP</h3>
+    <h3>Página Inicial - Projeto Cadastro IFSP</h3>
+    <?php 
+        if(!empty($_SESSION['login'])){ // caso a sessão esteja diferente de vazia
+            // executa isso.
+            echo "<h3>Ola ".$_SESSION['login']['nome_usuario']."</h3>"; // pega o nome do login
+            echo "<a href='logout.php'>Sair</a>";
+        }
+    ?>
     <hr>
     <ul>
-        <li><a href='cadastro_usuario.html'>Cadastrar</a></li> 
-        <li><a href='listar_usuario.php'>Listar</a></li> 
+       <li><a href="cadastro_usuario.html">Cadastrar</a></li>
+       <li><a href="listar_usuarios.php">Listar</a></li>
+       <?php 
+       if(empty($_SESSION['login'])){ // caso a sessão esteja vazia mostra o botão de login
+       echo "<li><a href='login.html'>Login</a></li>";
+        }
+       ?>
     </ul>
 </body>
 </html>
